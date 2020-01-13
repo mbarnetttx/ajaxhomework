@@ -1,9 +1,10 @@
 // these are the already existing buttons
+$(document).ready(function() {
 
   $("button").on("click", function() {
     var placeButton = $(this).attr("data-person");
     var queryURL = "https://api.giphy.com/v1/gifs/search?q=" +
-      placeButton + "&api_key=BkaUZZWcFij6J7AoQj3WtPb1R2p9O6V9&limit=50";
+      placeButton + "&api_key=BkaUZZWcFij6J7AoQj3WtPb1R2p9O6V9&limit=5";
 
     $.ajax({
       url: queryURL,
@@ -28,7 +29,8 @@
           $("#gifs-appear-here").prepend(gifDiv);
         }
 
-
+    })
+});
 
 
 // this is the button to find new gifs
@@ -44,8 +46,8 @@
     
             // Here we construct our URL
             var queryURL = "https://api.giphy.com/v1/gifs/search?q=" +
-            place + "&api_key=BkaUZZWcFij6J7AoQj3WtPb1R2p9O6V9&limit=50";
-      ;
+            place + "&api_key=BkaUZZWcFij6J7AoQj3WtPb1R2p9O6V9&limit=5";
+      
     
           
     
@@ -60,7 +62,6 @@
                 $('#place-view').html(JSON.stringify(response));
     
                 // =================================================================
-              });
+              })
             });
-      });
-  });
+        });
