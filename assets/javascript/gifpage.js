@@ -27,6 +27,8 @@ $(document).ready(function() {
                     gifDiv.prepend(placeImage);
 
                     $("#gifs-appear-here").prepend(gifDiv);
+
+                    
                 }
 
             })
@@ -49,7 +51,7 @@ $(document).ready(function() {
             place + "&api_key=BkaUZZWcFij6J7AoQj3WtPb1R2p9O6V9&limit=5";
 
 
-        console.log(response)
+       
 
 
         $.ajax({
@@ -75,9 +77,19 @@ $(document).ready(function() {
                     gifDiv.prepend(placeImage);
 
                     $("#gifs-appear-here").prepend(gifDiv);
-                    // Log the queryURL
-                    $('#gifs-appear-here').html(JSON.stringify(response));
+                    
 
+                    // adding a new button
+
+                   
+                    a.attr("data-place", results[i]);
+                    // Provided the initial button text
+                    a.text(results[i]);
+                    // Added the button to the HTML
+                    $("buttons").append(a);
+                   
+                   
+console.log(response)
                     // =================================================================
                 
                 }
