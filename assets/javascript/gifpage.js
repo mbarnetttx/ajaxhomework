@@ -28,7 +28,7 @@ $(document).ready(function() {
 
                     $("#gifs-appear-here").prepend(gifDiv);
 
-                    
+                    $("img").width(300);
                 }
 
             })
@@ -82,11 +82,11 @@ $(document).ready(function() {
                     // adding a new button
 
                    
-                    a.attr("data-place", results[i]);
+                    a.attr("data-place", place[i]);
                     // Provided the initial button text
-                    a.text(results[i]);
+                    a.text(place[i]);
                     // Added the button to the HTML
-                    $("buttons").append(a);
+                    $("#buttons").append(a);
                    
                    
 console.log(response)

@@ -6,13 +6,14 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     
     <script src="assets/javascript/gifpage.js"></script>
-    
+
     <link rel="stylesheet" href="assets/css/style.css">
             
         
     </head>
 <body>
 
+<div class="buttonContainer text-center">
     <div id="buttons">
         <button data-place="texas">
          Texas
@@ -43,6 +44,10 @@
           Russia
         </button>
 
+        </div>
+</div>
+
+<div class="searchContainer text-center">
         <form id="place-form">
             <label for="place-input">Search for a place</label>
             <input type="text" id="place-input"><br>
@@ -50,15 +55,18 @@
             <!-- This button will trigger our AJAX call -->
             <input id="find-place" type="submit" value="Place Search">
           </form>
-    
+        </div>
         <!-- data-person is assigned to the person variable, which is used in the query url to retrieve the info -->
         <!-- STEP THREE: open this file in the browser and click on your buttons. If they don't work, then fix your buttons -->
     
         <!-- STEP FOUR: go over the JavaScript with your partners, and explain the lines of code to each other. -->
     
       </div>
+
+      <div class="container text-center">
     
       <div id="gifs-appear-here">
+      </div>
       </div>
     
   
