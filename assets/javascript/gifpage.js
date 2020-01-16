@@ -82,12 +82,17 @@ $(document).ready(function() {
                     // adding a new button
 
                    
+                    var a = $("<button>");
+                    // Adding a class
+                    a.addClass("place");
+                    // Added a data-attribute
                     a.attr("data-place", place[i]);
                     // Provided the initial button text
                     a.text(place[i]);
                     // Added the button to the HTML
                     $("#buttons").append(a);
-                   
+                    // set size
+                    $("img").width(300);
                    
 console.log(response)
                     // =================================================================
